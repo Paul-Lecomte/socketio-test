@@ -32,7 +32,7 @@ const SocketTest = () => {
             setUsers(data.filter(user => user !== username).map((name, index) => ({
                 id: index,
                 name,
-                avatar: "https://via.placeholder.com/40"
+                avatar: "https://via.placeholder.com/40", // Default stock image
             })));
         });
 
@@ -123,7 +123,12 @@ const SocketTest = () => {
                             }`}
                             onClick={() => setActiveUser(user)}
                         >
-                            <img src={user.avatar} alt={user.name} className="w-12 h-12 rounded-full mr-3" />
+                            <img
+                                src={user.avatar}
+                                alt={user.name}
+                                className="w-12 h-12 rounded-full mr-3"
+                                onError={(e) => e.target.src = "https://via.placeholder.com/40"} // Fallback image
+                            />
                             <div>
                                 <p className="font-medium text-white">{user.name}</p>
                                 <p className="text-sm text-gray-400">Last message...</p>
@@ -138,7 +143,12 @@ const SocketTest = () => {
                         <>
                             {/* Header */}
                             <div className="flex items-center bg-gray-700 border-b border-gray-600 p-4">
-                                <img src={activeUser.avatar} alt="Active Chat" className="w-10 h-10 rounded-full mr-3" />
+                                <img
+                                    src={activeUser.avatar}
+                                    alt="Active Chat"
+                                    className="w-10 h-10 rounded-full mr-3"
+                                    onError={(e) => e.target.src = "https://via.placeholder.com/40"} // Fallback image
+                                />
                                 <div>
                                     <h1 className="text-lg font-bold text-white">{activeUser.name}</h1>
                                     <p className="text-sm text-gray-400">{connected ? "Online" : "Offline"}</p>
