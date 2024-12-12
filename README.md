@@ -3,6 +3,13 @@
 
 This project demonstrates a simple integration of Socket.IO with a React frontend, allowing real-time communication between the client and server. The backend is set up with Socket.IO to emit and receive messages, while the frontend allows sending and receiving messages using WebSockets.
 
+## Things to do
+- **Frontend**
+  - Create a real frontend that is actually usable
+
+- **Backend**
+    - Create a schema to store the messages in a DB to have a message history
+
 ## Features
 
 - **Frontend:**
