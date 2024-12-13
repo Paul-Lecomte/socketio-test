@@ -5,6 +5,7 @@ This project demonstrates a simple integration of Socket.IO with a React fronten
 
 ## Things to do
 - **Frontend**
+  - Design the interface
   - Create a real frontend that is actually usable
 
 - **Backend**
