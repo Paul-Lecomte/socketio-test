@@ -1,0 +1,18 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n# Socket.IO Test Project\r\n\r\nThis project demonstrates a simple integration of Socket.IO with a React frontend, allowing real-time communication between the client and server. The backend is set up with Socket.IO to emit and receive messages, while the frontend allows sending and receiving messages using WebSockets.\r\n\r\n## Things to do\r\n- **Frontend**\r\n  - Create a real frontend that is actually usable\r\n\r\n- **Backend**\r\n    - Create a schema to store the messages in a DB to have a message history\r\n\r\n## Features\r\n\r\n- **Frontend:**\r\n    - Connect and disconnect from the Socket.IO server.\r\n    - Send and receive real-time messages.\r\n    - Use of React with state management for connection handling.\r\n\r\n- **Backend:**\r\n    - Set up with Socket.IO to handle client connections.\r\n    - Emit messages from the server to the client and vice versa.\r\n\r\n## Setup\r\n\r\n### Backend\r\n\r\n1. Clone this repository.\r\n2. Navigate to the `backend` directory.\r\n3. Install dependencies:\r\n   ```bash\r\n   npm install\r\n   ```\r\n4. Start the server:\r\n   ```bash\r\n   node server.js\r\n   ```\r\n   The backend will be running on `http://localhost:4000`.\r\n\r\n### Frontend\r\n\r\n1. Navigate to the `frontend` directory.\r\n2. Install dependencies:\r\n   ```bash\r\n   npm install\r\n   ```\r\n3. Start the React app:\r\n   ```bash\r\n   npm start\r\n   ```\r\n   The frontend will be running on `http://localhost:3000`.\r\n\r\n### Technologies Used\r\n\r\n- **Backend:**\r\n    - Node.js\r\n    - Socket.IO\r\n\r\n- **Frontend:**\r\n    - React\r\n    - Tailwind CSS\r\n    - Material Tailwind\r\n\r\n## Usage\r\n\r\n1. Open the frontend in your browser (`http://localhost:3000`).\r\n2. Click the **Login** button to connect to the Socket.IO server.\r\n3. Type a message in the input box and click **Send Message** to send it to the backend.\r\n4. The backend will emit the message back to all connected clients.\r\n\r\n## License\r\n\r\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision e3771260a77d458fd0d3c1dc4a44a63f813df437)
++++ b/README.md	(date 1734171848160)
+@@ -5,6 +5,7 @@
+ 
+ ## Things to do
+ - **Frontend**
++  - Design the interface
+   - Create a real frontend that is actually usable
+ 
+ - **Backend**
